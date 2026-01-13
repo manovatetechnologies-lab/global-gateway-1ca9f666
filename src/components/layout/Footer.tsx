@@ -9,18 +9,19 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
-                <span className="text-primary font-display font-bold text-xl">GE</span>
-              </div>
-              <div>
-                <h3 className="font-display text-xl font-bold">Global Education</h3>
-                <p className="text-sm text-primary-foreground/70">Consultants</p>
-              </div>
-            </div>
-            <p className="text-primary-foreground/80 mb-6">
-              Your trusted partner for international education. We help students achieve their dreams of studying abroad with personalized guidance and support.
-            </p>
+            <div className="mb-6">
+  <h3 className="font-display text-xl font-semibold text-primary-foreground mb-3">
+    Optimus Global Education
+  </h3>
+
+  <p className="text-primary-foreground/80 leading-relaxed">
+    Your trusted partner for international education. We guide students
+    through every step of their study abroad journey with expert counselling,
+    global university partnerships, and personalized support.
+  </p>
+</div>
+
+            
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors">
                 <Facebook className="w-5 h-5" />
@@ -86,22 +87,26 @@ const Footer = () => {
             <h4 className="font-display text-lg font-semibold mb-6">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 mt-1 text-accent" />
-                <span className="text-primary-foreground/80">
-                  123 Education Street, Suite 456<br />
-                  New Delhi, India 110001
-                </span>
-              </li>
+  <MapPin className="w-5 h-5 mt-1 text-accent shrink-0" />
+
+  <span className="text-base text-primary-foreground/80 leading-relaxed">
+    2nd Floor, 12, Rajiv Gandhi Salai,<br />
+    Srinivasa Nagar,<br />
+    Kandhanchavadi, Perungudi,<br />
+    Chennai, Tamil Nadu 600096
+  </span>
+</li>
+
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent" />
-                <a href="tel:+1234567890" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  +1 234 567 890
+                <a href="tel:9087778000" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  9087778000
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent" />
-                <a href="mailto:info@globaleducation.com" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  info@globaleducation.com
+                <a href="mailto:info@optimusoverseasedu.com" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                   info@optimusoverseasedu.com
                 </a>
               </li>
             </ul>
@@ -113,12 +118,9 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 Global Education Consultants. All rights reserved.
+            © 2025 Optimus Global Education. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm">
-            <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">Privacy Policy</a>
-            <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">Terms of Service</a>
-          </div>
+          
         </div>
       </div>
     </footer>

@@ -7,17 +7,17 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Us",
-    details: ["123 Education Street, Suite 456", "New Delhi, India 110001"],
+    details: ["2nd Floor, 12, Rajiv Gandhi Salai, Srinivasa Nagar, Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096"],
   },
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+1 234 567 890", "+1 234 567 891"],
+    details: ["9087778000"],
   },
   {
     icon: Mail,
     title: "Email Us",
-    details: ["info@globaleducation.com", "admissions@globaleducation.com"],
+    details: ["info@optimusoverseasedu.com"],
   },
   {
     icon: Clock,
@@ -222,7 +222,7 @@ const Contact = () => {
                 </p>
                 <div className="rounded-2xl overflow-hidden h-[500px] bg-secondary">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.5400429369!2d77.04417450562502!3d28.52755441953125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1703123456789!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0331749280313!2d80.24854399999998!3d12.969729000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d6c837857cf%3A0xa4c6190d9941ab1e!2s2nd%20Floor%2C%2012%2C%20Rajiv%20Gandhi%20Salai%2C%20Srinivasa%20Nagar%2C%20Kandhanchavadi%2C%20Perungudi%2C%20Chennai%2C%20Tamil%20Nadu%20600096!5e0!3m2!1sen!2sin!4v1768267536389!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

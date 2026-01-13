@@ -73,7 +73,7 @@ const About = () => {
           <div className="container-custom">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
-                <span className="inline-block px-4 py-2 bg-accent/20 text-accent-foreground font-semibold rounded-full text-sm mb-6">
+                <span className="inline-block px-6 py-2 bg-accent text-white font-semibold rounded-full text-sm mb-4 shadow-md">
                   Who We Are
                 </span>
                 <h2 className="font-display text-4xl font-bold text-foreground mb-6">
@@ -123,7 +123,7 @@ const About = () => {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <span className="inline-block px-4 py-2 bg-accent/20 text-accent-foreground font-semibold rounded-full text-sm mb-6">
+                <span className="inline-block px-6 py-2 bg-accent text-white font-semibold rounded-full text-sm mb-4 shadow-md">
                   Why Choose Us
                 </span>
                 <h2 className="font-display text-4xl font-bold text-foreground mb-6">

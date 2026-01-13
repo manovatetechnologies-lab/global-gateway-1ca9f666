@@ -77,22 +77,17 @@ const Navbar = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-xl">
-                GE
-              </span>
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="font-display text-xl font-bold text-primary">
-                Global Education
-              </h1>
-              <p className="text-xs text-muted-foreground">
-                Your Gateway to World-Class Education
-              </p>
-            </div>
-          </Link>
+         {/* Logo */}
+<Link to="/" className="flex items-center gap-3">
+  <img
+    src="/logo.png"
+    alt="Global Education"
+    className="h-16 w-auto object-contain"
+  />
+
+  
+</Link>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
@@ -136,13 +131,7 @@ const Navbar = () => {
 
           {/* CTA & Mobile Menu */}
           <div className="flex items-center gap-4">
-            <a
-              href="tel:+1234567890"
-              className="hidden md:flex items-center gap-2 text-primary font-medium"
-            >
-              <Phone className="w-5 h-5" />
-              <span>+1 234 567 890</span>
-            </a>
+            
             <Link
               to="/contact"
               className="hidden md:inline-flex btn-hero text-sm px-6 py-3"

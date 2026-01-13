@@ -30,10 +30,10 @@ const CTABanner = () => {
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a
-              href="tel:+1234567890"
+              href="tel:+919087778000"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-primary text-primary font-semibold rounded-md hover:bg-primary hover:text-primary-foreground transition-colors"
             >
-              Call: +1 234 567 890
+              Call: 9087778000
             </a>
           </div>
         </div>

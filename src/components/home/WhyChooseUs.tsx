@@ -39,9 +39,9 @@ const WhyChooseUs = () => {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-accent/20 text-accent-foreground font-semibold rounded-full text-sm mb-4">
-            Why Choose Us
-          </span>
+  <span className="inline-block px-6 py-2 bg-accent text-white font-semibold rounded-full text-sm mb-4 shadow-md">
+    Why Choose Us
+  </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             Your Success is Our Priority
           </h2>
