@@ -36,16 +36,17 @@ const slides: Slide[] = [
     badge: "MCI Recognized Universities",
     link: "/mbbs-abroad",
   },
-  {
-    id: 3,
-    title: "Language Training",
-    subtitle: "Master Your English Proficiency",
-    description:
-      "Expert coaching for IELTS, PTE & TOEFL with proven success rates.",
-    image: heroLanguage,
-    badge: "IELTS • PTE • TOEFL",
-    link: "/courses",
-  },
+ {
+  id: 3,
+  title: "Courses Abroad",
+  subtitle: "Choose the Right Program for Your Future",
+  description:
+    "Explore Bachelor’s, Master’s, PhD, Diploma & Professional Certification programs at top international universities.",
+  image: heroLanguage,
+  badge: "Bachelor’s • Master’s • PhD • Diploma",
+  link: "/courses",
+},
+
 ];
 
 const HeroSlider = () => {
