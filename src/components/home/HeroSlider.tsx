@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight, GraduationCap, Users, Award, Globe } from "lucide-react";
+import { ChevronLeft, ChevronRight, GraduationCap, Globe } from "lucide-react";
 import heroStudyAbroad from "@/assets/hero-study-abroad.jpg";
 import heroMbbs from "@/assets/hero-mbbs.jpg";
 import heroLanguage from "@/assets/hero-language.jpg";
-import { link } from "fs/promises";
 
 interface Slide {
   id: number;
@@ -21,7 +20,8 @@ const slides: Slide[] = [
     id: 1,
     title: "Study Abroad",
     subtitle: "Your Gateway to World-Class Education",
-    description: "Explore top universities in USA, UK, Canada, Australia & Europe with expert guidance.",
+    description:
+      "Explore top universities in USA, UK, Canada, Australia & Europe with expert guidance.",
     image: heroStudyAbroad,
     badge: "USA • UK • Canada • Australia",
     link: "/study-abroad",
@@ -30,7 +30,8 @@ const slides: Slide[] = [
     id: 2,
     title: "MBBS Abroad",
     subtitle: "Pursue Your Medical Dreams Globally",
-    description: "Affordable MBBS programs in Russia, Georgia, Philippines & Kazakhstan with MCI recognized universities.",
+    description:
+      "Affordable MBBS programs in Russia, Georgia, Philippines & Kazakhstan with MCI recognized universities.",
     image: heroMbbs,
     badge: "MCI Recognized Universities",
     link: "/mbbs-abroad",
@@ -39,7 +40,8 @@ const slides: Slide[] = [
     id: 3,
     title: "Language Training",
     subtitle: "Master Your English Proficiency",
-    description: "Expert coaching for IELTS, PTE & TOEFL with proven success rates.",
+    description:
+      "Expert coaching for IELTS, PTE & TOEFL with proven success rates.",
     image: heroLanguage,
     badge: "IELTS • PTE • TOEFL",
     link: "/courses",
@@ -56,17 +58,8 @@ const HeroSlider = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
   return (
-    <section className="relative h-[90vh] min-h-[600px] overflow-hidden">
-      {/* Slides */}
+    <section className="relative h-[70vh] sm:h-[85vh] lg:h-[90vh] min-h-[520px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -74,7 +67,7 @@ const HeroSlider = () => {
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
-          {/* Background Image */}
+          {/* Background */}
           <div className="absolute inset-0">
             <img
               src={slide.image}
@@ -86,31 +79,38 @@ const HeroSlider = () => {
 
           {/* Content */}
           <div className="relative h-full container-custom flex items-center">
-            <div className="max-w-2xl">
+            <div className="max-w-2xl text-center sm:text-left">
               <div
                 className={`transition-all duration-700 delay-200 ${
                   index === currentSlide
                     ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-8"
+                    : "opacity-0 translate-y-6"
                 }`}
               >
-                <span className="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-full text-sm mb-6">
+                <span className="inline-block px-3 py-1.5 bg-accent text-primary font-semibold rounded-full text-xs sm:text-sm mb-4">
                   {slide.badge}
                 </span>
-                <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4">
+
+                <h1 className="font-display text-3xl sm:text-5xl lg:text-7xl font-bold text-primary-foreground mb-3">
                   {slide.title}
                 </h1>
-                <p className="text-xl md:text-2xl text-primary-foreground/90 font-display mb-4">
+
+                <p className="text-base sm:text-xl lg:text-2xl text-primary-foreground/90 mb-3">
                   {slide.subtitle}
                 </p>
-                <p className="text-lg text-primary-foreground/80 mb-8 max-w-xl">
+
+                <p className="text-sm sm:text-lg text-primary-foreground/80 mb-6 max-w-xl mx-auto sm:mx-0">
                   {slide.description}
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <Link to={slide.link} className="btn-hero">
+
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center sm:justify-start">
+                  <Link to={slide.link} className="btn-hero text-sm sm:text-base">
                     Learn More
                   </Link>
-                  <Link to="/contact" className="btn-outline-hero">
+                  <Link
+                    to="/contact"
+                    className="btn-outline-hero text-sm sm:text-base"
+                  >
                     Book Free Counselling
                   </Link>
                 </div>
@@ -118,9 +118,9 @@ const HeroSlider = () => {
             </div>
           </div>
 
-          {/* Floating Badges */}
+          {/* Floating badges – HIDDEN ON MOBILE */}
           <div
-            className={`floating-badge right-20 top-1/4 animate-float transition-all duration-700 delay-500 ${
+            className={`hidden lg:flex floating-badge right-20 top-1/4 animate-float transition-all duration-700 delay-500 ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -134,43 +134,51 @@ const HeroSlider = () => {
           </div>
 
           <div
-            className={`floating-badge right-40 bottom-1/4 animate-float transition-all duration-700 delay-700 ${
+            className={`hidden lg:flex floating-badge right-40 bottom-1/4 animate-float transition-all duration-700 delay-700 ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
-            style={{ animationDelay: "1s" }}
           >
             <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
               <Globe className="w-6 h-6 text-primary-foreground" />
             </div>
             <div>
               <p className="font-semibold text-foreground">50+ Countries</p>
-              <p className="text-sm text-muted-foreground">Worldwide Network</p>
+              <p className="text-sm text-muted-foreground">
+                Worldwide Network
+              </p>
             </div>
           </div>
         </div>
       ))}
 
-      {/* Navigation Arrows */}
+      {/* Arrows – smaller on mobile */}
       <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
+        onClick={() =>
+          setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+        }
+        className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center text-primary-foreground"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
       </button>
+
       <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
+        onClick={() =>
+          setCurrentSlide((prev) => (prev + 1) % slides.length)
+        }
+        className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center text-primary-foreground"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-3">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`slider-dot ${index === currentSlide ? "active" : ""}`}
+            className={`slider-dot ${
+              index === currentSlide ? "active" : ""
+            }`}
           />
         ))}
       </div>
