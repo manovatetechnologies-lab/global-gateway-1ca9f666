@@ -5,9 +5,28 @@ import {
   FileCheck,
   ArrowRight
 } from "lucide-react";
+import Layout from "./layout/Layout";
+import { Helmet } from "react-helmet-async";
+
 
 export default function Masters() {
   return (
+    <Layout>
+      <Helmet>
+    <title>
+      Master’s Degree Programs Abroad | Optimus Overseas Educational Consultants
+    </title>
+
+    <meta
+      name="description"
+      content="Pursue master’s degree programs abroad with Optimus Overseas Educational Consultants. Study MS, MBA and postgraduate courses in USA, UK, Canada, Australia and Europe."
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.optimusoverseasedu.com/courses/masters"
+    />
+  </Helmet>
     <div className="bg-[#f6f9fc]">
 
       {/* ================= HERO ================= */}
@@ -18,14 +37,12 @@ export default function Masters() {
           </span>
 
           <h1 className="text-5xl font-bold max-w-4xl mb-6">
-            Specialize, Upskill & Advance Your Global Career
-          </h1>
+  Master’s Degree Programs Abroad
+</h1>
 
           <p className="text-lg text-blue-100 max-w-3xl">
-            International master’s programs designed for graduates seeking
-            specialization, global exposure, and strong career outcomes in
-            competitive job markets.
-          </p>
+  Optimus Overseas Educational Consultants helps students pursue master’s degree programs abroad with expert guidance on universities, countries and career outcomes.
+</p>
         </div>
       </section>
 
@@ -200,5 +217,6 @@ export default function Masters() {
       </section>
 
     </div>
+    </Layout>
   );
 }

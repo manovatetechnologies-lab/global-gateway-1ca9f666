@@ -6,9 +6,28 @@ import {
   Briefcase,
   ArrowRight
 } from "lucide-react";
+import Layout from "./layout/Layout";
+import { Helmet } from "react-helmet-async";
+
 
 export default function Certifications() {
   return (
+    <Layout>
+      <Helmet>
+    <title>
+      Professional Certifications Abroad | Optimus Overseas Educational Consultants
+    </title>
+
+    <meta
+      name="description"
+      content="Explore professional certification programs abroad with Optimus Overseas Educational Consultants. Upskill with globally recognized certifications in tech, business, finance and healthcare."
+    />
+ 
+    <link
+      rel="canonical"
+      href="https://www.optimusoverseasedu.com/courses/certifications"
+    />
+  </Helmet>
     <div className="bg-[#f6f9fc]">
 
       {/* ================= HERO ================= */}
@@ -19,14 +38,13 @@ export default function Certifications() {
           </span>
 
           <h1 className="text-5xl font-bold max-w-4xl mb-6">
-            Upgrade Skills. Switch Careers. Increase Global Value.
-          </h1>
+  Professional Certification Programs Abroad
+</h1>
 
-          <p className="text-lg text-blue-100 max-w-3xl">
-            Industry-recognized certification programs designed for professionals
-            seeking quick upskilling, international exposure, and improved career
-            outcomes without long academic commitments.
-          </p>
+        <p className="text-lg text-blue-100 max-w-3xl">
+  Optimus Overseas Educational Consultants offers globally recognized professional certification programs abroad for career growth, upskilling and international exposure.
+</p>
+
         </div>
       </section>
 
@@ -198,5 +216,6 @@ export default function Certifications() {
       </section>
 
     </div>
+    </Layout>
   );
 }

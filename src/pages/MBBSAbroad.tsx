@@ -2,6 +2,8 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { Stethoscope, GraduationCap, DollarSign, CheckCircle, Globe, Clock } from "lucide-react";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
+
 
 const topUniversities: Record<string, string[]> = {
   russia: [
@@ -227,6 +229,21 @@ const MBBSAbroad = () => {
 
   return (
     <Layout>
+      <Helmet>
+    <title>
+      MBBS Abroad Consultants in India | Optimus Overseas Educational Consultants
+    </title>
+
+    <meta
+      name="description"
+      content="Study MBBS abroad with Optimus Overseas Educational Consultants. Get admission in NMC-recognized medical universities in Russia, Georgia, Philippines, Kazakhstan and Europe."
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.optimusoverseasedu.com/mbbs-abroad"
+    />
+  </Helmet>
       <div className="page-transition">
         {/* Hero Section */}
         <section className="bg-primary py-24">
@@ -236,11 +253,11 @@ const MBBSAbroad = () => {
                 MBBS Abroad
               </span>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-                Pursue Your Medical Dreams Globally
-              </h1>
+  MBBS Abroad Consultants in India
+</h1>
               <p className="text-xl text-primary-foreground/80">
-                Affordable, MCI-recognized MBBS programs in top medical universities abroad. Start your journey to becoming a doctor today.
-              </p>
+  Optimus Overseas Educational Consultants offers affordable MBBS abroad programs in NMC-recognized medical universities across Russia, Georgia, Philippines, Kazakhstan and Europe.
+</p>
             </div>
           </div>
         </section>
@@ -278,7 +295,7 @@ const MBBSAbroad = () => {
           <div className="container-custom">
             <div className="text-center mb-16">
               <h2 className="font-display text-4xl font-bold text-foreground mb-4">
-                Top Destinations for MBBS
+                Top Countries for MBBS Abroad
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Explore our partner universities in these popular medical education destinations.

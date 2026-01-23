@@ -7,11 +7,30 @@ import {
 } from "lucide-react";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import Layout from "./layout/Layout";
+import { Helmet } from "react-helmet-async";
+
 
 export default function Bachelors() {
     const navigate = useNavigate();
 
   return (
+    <Layout>
+      <Helmet>
+    <title>
+      Bachelor’s Programs Abroad | Optimus Overseas Educational Consultants
+    </title>
+
+    <meta
+      name="description"
+      content="Explore bachelor’s degree programs abroad with Optimus Overseas Educational Consultants. Study undergraduate courses in USA, UK, Canada, Australia and Europe."
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.optimusoverseasedu.com/courses/bachelors"
+    />
+  </Helmet>
     <div className="bg-[#f6f9fc]">
 
       {/* ================= HERO ================= */}
@@ -24,14 +43,12 @@ export default function Bachelors() {
           
 
           <h1 className="text-5xl font-bold max-w-4xl mb-6">
-            Build a Strong Academic Foundation Abroad
-          </h1>
+  Bachelor’s Degree Programs Abroad
+</h1>
 
           <p className="text-lg text-blue-100 max-w-3xl">
-            Explore undergraduate programs designed for students after Grade 12,
-            offering global exposure, academic excellence, and seamless pathways
-            to postgraduate education.
-          </p>
+  Optimus Overseas Educational Consultants helps students pursue bachelor’s degree programs abroad with expert guidance on universities, countries and admissions.
+</p>
         </div>
       </section>
 
@@ -208,5 +225,6 @@ export default function Bachelors() {
       </section>
 
     </div>
+    </Layout>
   );
 }

@@ -6,9 +6,29 @@ import {
   Clock,
   ArrowRight
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+import Layout from "./layout/Layout";
+
 
 export default function Diploma() {
   return (
+    <Layout>
+  <Helmet>
+    <title>
+      Diploma & PG Diploma Programs Abroad | Optimus Overseas Educational Consultants
+    </title>
+
+    <meta
+      name="description"
+      content="Explore diploma and PG diploma programs abroad with Optimus Overseas Educational Consultants. Short-term, skill-based courses in business, IT, engineering and healthcare."
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.optimusoverseasedu.com/courses/diploma"
+    />
+  </Helmet>
+
     <div className="bg-[#f6f9fc]">
 
       {/* ================= HERO ================= */}
@@ -19,14 +39,12 @@ export default function Diploma() {
           </span>
 
           <h1 className="text-5xl font-bold max-w-4xl mb-6">
-            Fast-Track Your Career with Practical Diploma Programs
-          </h1>
+  Diploma & PG Diploma Programs Abroad
+</h1>
 
           <p className="text-lg text-blue-100 max-w-3xl">
-            Short-term, skill-focused diploma and postgraduate diploma programs
-            designed for students and professionals seeking quick global exposure,
-            employability, and affordable overseas education pathways.
-          </p>
+  Optimus Overseas Educational Consultants offers diploma and PG diploma programs abroad with skill-focused, affordable and career-oriented overseas education pathways.
+</p>
         </div>
       </section>
 
@@ -199,5 +217,6 @@ export default function Diploma() {
       </section>
 
     </div>
+    </Layout>
   );
 }

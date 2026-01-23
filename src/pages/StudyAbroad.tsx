@@ -6,6 +6,8 @@ import countryUK from "@/assets/country-uk.jpg";
 import countryCanada from "@/assets/country-canada.jpg";
 import countryAustralia from "@/assets/country-australia.jpg";
 import countryEurope from "@/assets/country-europe.jpg";
+import { Helmet } from "react-helmet-async";
+
 
 const countries = [
   {
@@ -63,6 +65,21 @@ const countries = [
 const StudyAbroad = () => {
   return (
     <Layout>
+      <Helmet>
+    <title>
+      Study Abroad Consultants in India | Optimus Overseas Educational Consultants
+    </title>
+
+    <meta
+      name="description"
+      content="Optimus Overseas Educational Consultants provides expert study abroad guidance for USA, UK, Canada, Australia and Europe. Free counselling available."
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.optimusoverseasedu.com/study-abroad"
+    />
+  </Helmet>
       <div className="page-transition">
         {/* Hero Section */}
         <section className="bg-primary py-24">
@@ -72,11 +89,11 @@ const StudyAbroad = () => {
                 Study Abroad
               </span>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-                Your Gateway to Global Education
-              </h1>
+  Study Abroad Consultants in India
+</h1>
               <p className="text-xl text-primary-foreground/80">
-                Explore world-class universities across the globe. From USA to Australia, we help you find the perfect destination for your academic journey.
-              </p>
+  Optimus Overseas Educational Consultants helps students study abroad in USA, UK, Canada, Australia and Europe with expert counselling and admissions support.
+</p>
             </div>
           </div>
         </section>
@@ -105,10 +122,10 @@ const StudyAbroad = () => {
                   <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                     <div className="relative rounded-2xl overflow-hidden">
                       <img
-                        src={country.image}
-                        alt={country.name}
-                        className="w-full h-80 object-cover"
-                      />
+  src={country.image}
+  alt={`Study in ${country.name} - Optimus Overseas Educational Consultants`}
+  className="w-full h-80 object-cover"
+/>
                       <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
                       <div className="absolute bottom-6 left-6">
                         <h3 className="font-display text-3xl font-bold text-primary-foreground">

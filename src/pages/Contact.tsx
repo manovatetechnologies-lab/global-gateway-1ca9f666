@@ -2,6 +2,8 @@ import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Helmet } from "react-helmet-async";
+
 
 const contactInfo = [
   {
@@ -88,7 +90,23 @@ const Contact = () => {
   };
 
   return (
+    <>
     <Layout>
+      <Helmet>
+    <title>
+      Contact Optimus Overseas Educational Consultants | Free Study Abroad Consultation
+    </title>
+
+    <meta
+      name="description"
+      content="Contact Optimus Overseas Educational Consultants for free study abroad counselling, MBBS abroad guidance, admissions and visa assistance. Call or visit our Chennai office."
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.optimusoverseasedu.com/contact"
+    />
+  </Helmet>
       <div className="page-transition">
         {/* Hero Section */}
         <section className="bg-primary py-24">
@@ -98,8 +116,8 @@ const Contact = () => {
                 Contact Us
               </span>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-                Get in Touch With Us
-              </h1>
+  Contact Optimus Overseas Educational Consultants
+</h1>
               <p className="text-xl text-primary-foreground/80">
                 Have questions about studying abroad? Our expert counsellors are
                 here to help you every step of the way.
@@ -223,6 +241,7 @@ const Contact = () => {
         </section>
       </div>
     </Layout>
+    </>
   );
 };
 

@@ -61,6 +61,10 @@ const HeroSlider = () => {
 
   return (
     <section className="relative h-[70vh] sm:h-[85vh] lg:h-[90vh] min-h-[520px] overflow-hidden">
+      <h1 className="sr-only">
+  Study Abroad & MBBS Abroad Consultants – Optimus Overseas Educational Consultants
+</h1>
+
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -72,7 +76,7 @@ const HeroSlider = () => {
           <div className="absolute inset-0">
             <img
               src={slide.image}
-              alt={slide.title}
+              alt={`${slide.title} - Optimus Overseas Educational Consultants`}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-overlay-gradient" />
@@ -92,9 +96,10 @@ const HeroSlider = () => {
                   {slide.badge}
                 </span>
 
-                <h1 className="font-display text-3xl sm:text-5xl lg:text-7xl font-bold text-primary-foreground mb-3">
-                  {slide.title}
-                </h1>
+                <h2 className="font-display text-3xl sm:text-5xl lg:text-7xl font-bold text-primary-foreground mb-3">
+  {slide.title}
+</h2>
+
 
                 <p className="text-base sm:text-xl lg:text-2xl text-primary-foreground/90 mb-3">
                   {slide.subtitle}

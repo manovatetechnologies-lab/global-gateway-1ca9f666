@@ -43,10 +43,10 @@ const WhyChooseUs = () => {
     Why Choose Us
   </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Your Success is Our Priority
-          </h2>
+  Why Choose Optimus Overseas Educational Consultants
+</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We combine expertise, technology, and personalized care to make your study abroad journey seamless and successful.
+            We are trusted study abroad and MBBS abroad consultants providing expert guidance, personalized counselling, and end-to-end support for students worldwide.
           </p>
         </div>
 

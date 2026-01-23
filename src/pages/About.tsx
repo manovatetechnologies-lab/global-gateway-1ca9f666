@@ -1,6 +1,8 @@
 import Layout from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { Target, Eye, Award, Users, CheckCircle, Globe } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+
 
 const stats = [
   { number: "15+", label: "Years Experience" },
@@ -33,7 +35,23 @@ const reasons = [
 
 const About = () => {
   return (
+    <>
     <Layout>
+      <Helmet>
+  <title>
+    About Optimus Overseas Educational Consultants | Study Abroad Experts
+  </title>
+
+  <meta
+    name="description"
+    content="Learn about Optimus Overseas Educational Consultants, a trusted study abroad consultancy helping students with overseas education, MBBS abroad, and visa guidance since 2009."
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/about"
+  />
+</Helmet>
       <div className="page-transition">
         {/* Hero Section */}
         <section className="bg-primary py-24">
@@ -43,11 +61,12 @@ const About = () => {
                 About Us
               </span>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-                Your Trusted Partner in International Education
-              </h1>
+  About Optimus Overseas Educational Consultants
+</h1>
               <p className="text-xl text-primary-foreground/80">
-                Since 2009, we have been helping students achieve their dreams of studying abroad with personalized guidance and unwavering support.
-              </p>
+  Your trusted partner for study abroad, MBBS abroad, and overseas education guidance since 2009.
+</p>
+
             </div>
           </div>
         </section>
@@ -77,10 +96,10 @@ const About = () => {
                   Who We Are
                 </span>
                 <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                  Global Education Consultants
-                </h2>
+  Optimus Overseas Educational Consultants
+</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Global Education Consultants is a premier international education consultancy firm dedicated to helping students realize their dreams of studying abroad. With over 15 years of experience, we have successfully guided thousands of students to prestigious universities across the globe.
+                  Optimus Overseas Educational Consultants is a premier international education consultancy firm dedicated to helping students achieve their study abroad and overseas education goals.
                 </p>
                 <p className="text-lg text-muted-foreground mb-8">
                   Our team of certified counsellors provides personalized guidance at every step – from course selection and university shortlisting to visa application and pre-departure support. We believe that quality education should be accessible to all, and we work tirelessly to make that a reality.
@@ -88,6 +107,10 @@ const About = () => {
                 <Link to="/contact" className="btn-hero">
                   Get Free Consultation
                 </Link>
+                <br /><br />
+                <Link to="/study-abroad" className="btn-hero">
+  Study Abroad Consultancy Services
+</Link>
               </div>
               <div className="grid grid-cols-2 gap-6">
                 {values.map((value, index) => (
@@ -127,8 +150,8 @@ const About = () => {
                   Why Choose Us
                 </span>
                 <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                  Why Students & Parents Trust Us
-                </h2>
+  Why Students & Parents Trust Optimus Overseas Educational Consultants
+</h2>
                 <p className="text-lg text-muted-foreground mb-6">
                   Our commitment to excellence and student success has made us one of the most trusted names in international education consulting. Here's why thousands of students choose us every year.
                 </p>
@@ -169,6 +192,7 @@ const About = () => {
         </section>
       </div>
     </Layout>
+    </>
   );
 };
 

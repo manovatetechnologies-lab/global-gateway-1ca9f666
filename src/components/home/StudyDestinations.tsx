@@ -51,8 +51,8 @@ const StudyDestinations = () => {
 </span>
 
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-              Explore Top Countries
-            </h2>
+  Study Abroad Destinations for Indian Students
+</h2>
           </div>
           <Link
             to="/study-abroad"
@@ -72,11 +72,14 @@ const StudyDestinations = () => {
               className="country-card"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <img src={destination.image} alt={destination.name} />
+              <img
+  src={destination.image}
+  alt={`Study in ${destination.name} - Optimus Overseas Educational Consultants`}
+/>
               <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
                 <h3 className="font-display text-xl font-semibold text-primary-foreground mb-1">
-                  {destination.name}
-                </h3>
+  Study in {destination.name}
+</h3>
                 <p className="text-sm text-primary-foreground/80">
                   {destination.universities}
                 </p>

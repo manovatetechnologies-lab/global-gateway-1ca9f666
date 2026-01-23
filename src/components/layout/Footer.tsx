@@ -11,13 +11,11 @@ const Footer = () => {
           <div>
             <div className="mb-6">
   <h3 className="font-display text-xl font-semibold text-primary-foreground mb-3">
-    Optimus Global Education
-  </h3>
+  Optimus Overseas Educational Consultants
+</h3>
 
   <p className="text-primary-foreground/80 leading-relaxed">
-    Your trusted partner for international education. We guide students
-    through every step of their study abroad journey with expert counselling,
-    global university partnerships, and personalized support.
+    Optimus Overseas Educational Consultants is a trusted study abroad consultancy offering expert guidance for overseas education, MBBS abroad, admissions, and student visa support.
   </p>
 </div>
 
@@ -26,13 +24,10 @@ const Footer = () => {
               <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors">
+              <a href="https://www.instagram.com/optimus_educational_consultant/" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/company/optimusoverseasedu/?viewAsMember=true" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors">
+              <a href="https://www.linkedin.com/company/optimusoverseasedu/" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -40,7 +35,9 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-6">Quick Links</h4>
+            <h4 className="font-display text-lg font-semibold mb-6">
+  Study Abroad Services
+</h4>
             <ul className="space-y-3">
               <li>
                 <Link to="/about" className="text-primary-foreground/80 hover:text-accent transition-colors">About Us</Link>
@@ -52,7 +49,7 @@ const Footer = () => {
                 <Link to="/mbbs-abroad" className="text-primary-foreground/80 hover:text-accent transition-colors">MBBS Abroad</Link>
               </li>
               <li>
-                <Link to="/courses" className="text-primary-foreground/80 hover:text-accent transition-colors">Courses offered</Link>
+                <Link to="/courses" className="text-primary-foreground/80 hover:text-accent transition-colors">Courses & Programs Abroad</Link>
               </li>
               <li>
                 <Link to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors">Contact Us</Link>
@@ -89,12 +86,12 @@ const Footer = () => {
               <li className="flex items-start gap-3">
   <MapPin className="w-5 h-5 mt-1 text-accent shrink-0" />
 
-  <span className="text-base text-primary-foreground/80 leading-relaxed">
-    2nd Floor, 12, Rajiv Gandhi Salai,<br />
-    Srinivasa Nagar,<br />
-    Kandhanchavadi, Perungudi,<br />
-    Chennai, Tamil Nadu 600096
-  </span>
+  <address className="not-italic text-base text-primary-foreground/80 leading-relaxed">
+  2nd Floor, 12, Rajiv Gandhi Salai,<br />
+  Srinivasa Nagar,<br />
+  Kandhanchavadi, Perungudi,<br />
+  Chennai, Tamil Nadu 600096
+</address>
 </li>
 
               <li className="flex items-center gap-3">
@@ -118,7 +115,7 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/60 text-sm">
-            © 2025 Optimus Global Education. All rights reserved.
+            © 2025 Optimus Overseas Educational Consultants. All rights reserved.
           </p>
           
         </div>

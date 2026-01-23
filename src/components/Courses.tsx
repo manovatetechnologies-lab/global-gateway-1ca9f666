@@ -1,31 +1,49 @@
 import { motion } from "framer-motion";
 import CourseCard from "./CourseCard";
+import { Helmet } from "react-helmet-async";
+import Layout from "./layout/Layout";
 
 export default function Courses() {
   return (
+    <>
+    <Layout>
+     <Helmet>
+        <title>
+          Courses & Programs Abroad | Optimus Overseas Educational Consultants
+        </title>
+
+        <meta
+          name="description"
+          content="Explore bachelor’s, master’s, PhD, diploma and professional courses abroad with Optimus Overseas Educational Consultants. Study in USA, UK, Canada, Australia and Europe."
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.optimusoverseasedu.com/courses"
+        />
+      </Helmet>
     <div className="overflow-hidden">
 
       {/* ================= HERO SECTION ================= */}
       <section className="relative bg-gradient-to-r from-[#0b2c5d] to-[#123c7a] text-white">
         <div className="container-custom py-28">
           <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9 }}
-            className="text-5xl font-bold mb-6 max-w-3xl"
-          >
-            Global Academic Programs for Your Future
-          </motion.h1>
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.9 }}
+  className="text-5xl font-bold mb-6 max-w-3xl"
+>
+  Courses & Programs Abroad
+</motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.9 }}
-            className="text-xl text-white/80 max-w-2xl"
-          >
-            Undergraduate, postgraduate, doctoral, and professional programs
-            across world-class international universities.
-          </motion.p>
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2, duration: 0.9 }}
+  className="text-xl text-white/80 max-w-2xl"
+>
+  Optimus Overseas Educational Consultants offers bachelor’s, master’s, PhD, diploma and professional courses at top international universities.
+</motion.p>
         </div>
       </section>
 
@@ -111,7 +129,7 @@ export default function Courses() {
         <div className="container-custom py-28 grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h3 className="text-3xl font-bold text-[#0b2c5d] mb-6">
-              Why Choose Optimus Global Education?
+              Why Choose Optimus Overseas Educational Consultants?
             </h3>
 
             <ul className="space-y-4 text-gray-700 text-lg">
@@ -159,5 +177,7 @@ export default function Courses() {
       </section>
 
     </div>
+    </Layout>
+    </>
   );
 }

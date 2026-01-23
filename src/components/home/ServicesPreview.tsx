@@ -4,19 +4,19 @@ import { GraduationCap, Stethoscope, Plane } from "lucide-react";
 const services = [
   {
     icon: GraduationCap,
-    title: "Study Abroad Consulting",
+    title: "Study Abroad Consultancy",
     description: "Expert guidance for undergraduate, postgraduate, and PhD programs in top universities worldwide.",
     link: "/study-abroad",
   },
   {
     icon: Stethoscope,
-    title: "MBBS Abroad",
+    title: "MBBS Abroad Consultancy",
     description: "Affordable medical education in MCI recognized universities with complete admission support.",
     link: "/mbbs-abroad",
   },
 {
   icon: GraduationCap,
-  title: "Courses Abroad",
+  title: "Courses & Programs Abroad",
   description:
     "Explore Bachelor's, Master's, PhD, Diploma, and Professional Certification programs at globally recognized universities abroad.",
   link: "/courses",
@@ -24,7 +24,7 @@ const services = [
 
   {
     icon: Plane,
-    title: "Visa Assistance",
+    title: "Student Visa Assistance",
     description: "End-to-end visa application support with 98% success rate and interview preparation.",
     link: "/contact",
   },
@@ -40,10 +40,10 @@ const ServicesPreview = () => {
             Our Services
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
-            Comprehensive Education Solutions
-          </h2>
+  Our Study Abroad & Overseas Education Services
+</h2>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            From course selection to post-landing assistance, we provide complete support for your international education journey.
+            We offer complete study abroad, MBBS abroad, and overseas education services including counselling, admissions, and visa assistance.
           </p>
         </div>
 

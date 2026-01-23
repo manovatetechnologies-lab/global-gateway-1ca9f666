@@ -6,9 +6,28 @@ import {
   Globe,
   ArrowRight
 } from "lucide-react";
+import Layout from "./layout/Layout";
+import { Helmet } from "react-helmet-async";
+
 
 export default function PhD() {
   return (
+    <Layout>
+      <Helmet>
+    <title>
+      PhD & Doctorate Programs Abroad | Optimus Overseas Educational Consultants
+    </title>
+
+    <meta
+      name="description"
+      content="Pursue PhD and doctorate programs abroad with Optimus Overseas Educational Consultants. Get guidance on research proposals, funded PhD options and top global universities."
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.optimusoverseasedu.com/courses/phd"
+    />
+  </Helmet>
     <div className="bg-[#f6f9fc]">
 
       {/* ================= HERO ================= */}
@@ -19,14 +38,12 @@ export default function PhD() {
           </span>
 
           <h1 className="text-5xl font-bold max-w-4xl mb-6">
-            Advance Knowledge Through Global Research Excellence
-          </h1>
+  PhD & Doctorate Programs Abroad
+</h1>
 
           <p className="text-lg text-blue-100 max-w-3xl">
-            Doctoral programs designed for scholars, researchers, and academics
-            seeking advanced research training, international collaboration,
-            and academic leadership.
-          </p>
+  Optimus Overseas Educational Consultants helps scholars pursue PhD and doctorate programs abroad with expert guidance on research, funding and university selection.
+</p>
         </div>
       </section>
 
@@ -191,5 +208,6 @@ export default function PhD() {
       </section>
 
     </div>
+    </Layout>
   );
 }
