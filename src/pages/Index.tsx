@@ -8,9 +8,9 @@ import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   return (
-    <>
     <Layout>
-      <Helmet>
+      
+<Helmet>
         <title>
           Optimus Overseas Educational Consultants | Study Abroad & MBBS
         </title>
@@ -25,6 +25,11 @@ const Index = () => {
           href="https://www.optimusoverseasedu.com/"
         />
       </Helmet>
+      {/* SEO H1 – must exist */}
+      <h1 className="sr-only">
+        Study Abroad & MBBS Abroad Consultants in India
+      </h1>
+
       <div className="page-transition">
         <HeroSlider />
         <WhyChooseUs />
@@ -33,8 +38,8 @@ const Index = () => {
         <CTABanner />
       </div>
     </Layout>
-    </>
   );
 };
+
 
 export default Index;

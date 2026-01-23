@@ -61,9 +61,9 @@ const HeroSlider = () => {
 
   return (
     <section className="relative h-[70vh] sm:h-[85vh] lg:h-[90vh] min-h-[520px] overflow-hidden">
-      <h1 className="sr-only">
+      <h2 className="sr-only">
   Study Abroad & MBBS Abroad Consultants – Optimus Overseas Educational Consultants
-</h1>
+</h2>
 
       {slides.map((slide, index) => (
         <div
