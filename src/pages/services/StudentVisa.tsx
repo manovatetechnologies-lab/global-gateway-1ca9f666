@@ -7,6 +7,7 @@ import {
   ClipboardCheck,
   ShieldCheck,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const visaSteps = [
   "University offer confirmation",
@@ -35,8 +36,65 @@ const commonMistakes = [
 const StudentVisa = () => {
   return (
     <Layout>
+      {/* SEO */}
+      <Helmet>
+        {/* Primary SEO */}
+        <title>
+          Student Visa Consultants for Study Abroad | Optimus Overseas Education
+        </title>
+
+        <meta
+          name="description"
+          content="Optimus Overseas Education provides expert student visa assistance for study abroad, including documentation, interview preparation, and high visa approval success."
+        />
+
+        <meta
+          name="keywords"
+          content="student visa consultants, study abroad visa assistance, student visa process, overseas education visa support, visa interview preparation"
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.optimusoverseasedu.com/services/student-visa"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Student Visa Consultants for Study Abroad | Optimus Overseas Education"
+        />
+        <meta
+          property="og:description"
+          content="End-to-end student visa guidance with expert documentation, interview preparation, and proven approval success rates."
+        />
+        <meta
+          property="og:url"
+          content="https://www.optimusoverseasedu.com/services/student-visa"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Student Visa Consultants for Study Abroad"
+        />
+        <meta
+          name="twitter:description"
+          content="Expert student visa services for studying abroad, including SOP, interview prep, and documentation support."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+      </Helmet>
+
       {/* HERO */}
-       <section className="bg-primary pt-32 pb-24">
+      <section className="bg-primary pt-32 pb-24">
         <div className="container-custom">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-full text-sm mb-6">
@@ -48,10 +106,9 @@ const StudentVisa = () => {
             </h1>
 
             <p className="text-xl text-primary-foreground/80 leading-relaxed">
-             Our visa experts guide you through every step of the student visa
+              Our visa experts guide you through every step of the student visa
               process, ensuring accuracy, confidence, and high approval success
               rates.
-              
             </p>
           </div>
         </div>
@@ -92,7 +149,6 @@ const StudentVisa = () => {
       <section className="section-padding">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12">
-            {/* SUCCESS FACTORS */}
             <div className="bg-white rounded-2xl p-8 shadow-sm border">
               <h3 className="font-display text-3xl font-bold text-foreground mb-6">
                 Visa Success Factors
@@ -108,7 +164,6 @@ const StudentVisa = () => {
               </ul>
             </div>
 
-            {/* COMMON MISTAKES */}
             <div className="bg-white rounded-2xl p-8 shadow-sm border">
               <h3 className="font-display text-3xl font-bold text-foreground mb-6">
                 Common Reasons for Visa Rejection
@@ -127,7 +182,7 @@ const StudentVisa = () => {
         </div>
       </section>
 
-      {/* TRUST SECTION */}
+      {/* TRUST */}
       <section className="section-padding bg-secondary">
         <div className="container-custom">
           <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -164,7 +219,7 @@ const StudentVisa = () => {
         </div>
       </section>
 
-      {/* CTA BOX */}
+      {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl px-10 py-14 text-center relative -mb-24">

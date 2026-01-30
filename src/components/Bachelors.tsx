@@ -16,21 +16,62 @@ export default function Bachelors() {
 
   return (
     <Layout>
-      <Helmet>
-    <title>
-      Bachelor’s Programs Abroad | Optimus Overseas Educational Consultants
-    </title>
+<Helmet>
+  {/* Primary SEO */}
+  <title>
+    Bachelor’s Programs Abroad | Study Undergraduate Courses – Optimus Overseas
+  </title>
 
-    <meta
-      name="description"
-      content="Explore bachelor’s degree programs abroad with Optimus Overseas Educational Consultants. Study undergraduate courses in USA, UK, Canada, Australia and Europe."
-    />
+  <meta
+    name="description"
+    content="Optimus Overseas Educational Consultants helps students study bachelor’s degree programs abroad in USA, UK, Canada, Australia and Europe with expert counselling and admissions support."
+  />
 
-    <link
-      rel="canonical"
-      href="https://www.optimusoverseasedu.com/courses/bachelors"
-    />
-  </Helmet>
+  <meta
+    name="keywords"
+    content="bachelors abroad, undergraduate programs abroad, study bachelors abroad, bachelors degree overseas, bachelors in usa uk canada australia"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/courses/bachelors"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Bachelor’s Programs Abroad | Study Undergraduate Courses Overseas"
+  />
+  <meta
+    property="og:description"
+    content="Explore bachelor’s degree programs abroad with Optimus Overseas. Study undergraduate courses in top universities across USA, UK, Canada, Australia and Europe."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/courses/bachelors"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Bachelor’s Programs Abroad | Optimus Overseas"
+  />
+  <meta
+    name="twitter:description"
+    content="Study bachelor’s degree programs abroad with expert guidance on universities, countries and admissions."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
     <div className="bg-[#f6f9fc]">
 
       {/* ================= HERO ================= */}

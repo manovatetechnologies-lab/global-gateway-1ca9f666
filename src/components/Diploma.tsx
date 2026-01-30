@@ -13,21 +13,62 @@ import Layout from "./layout/Layout";
 export default function Diploma() {
   return (
     <Layout>
-  <Helmet>
-    <title>
-      Diploma & PG Diploma Programs Abroad | Optimus Overseas Educational Consultants
-    </title>
+<Helmet>
+  {/* Primary SEO */}
+  <title>
+    Diploma & PG Diploma Programs Abroad | Study Short-Term Courses Overseas
+  </title>
 
-    <meta
-      name="description"
-      content="Explore diploma and PG diploma programs abroad with Optimus Overseas Educational Consultants. Short-term, skill-based courses in business, IT, engineering and healthcare."
-    />
+  <meta
+    name="description"
+    content="Explore diploma and PG diploma programs abroad with Optimus Overseas Educational Consultants. Short-term, skill-based courses in business, IT, engineering and healthcare across top study destinations."
+  />
 
-    <link
-      rel="canonical"
-      href="https://www.optimusoverseasedu.com/courses/diploma"
-    />
-  </Helmet>
+  <meta
+    name="keywords"
+    content="diploma abroad, pg diploma abroad, diploma courses overseas, short term courses abroad, diploma study abroad"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/courses/diploma"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Diploma & PG Diploma Programs Abroad | Study Overseas"
+  />
+  <meta
+    property="og:description"
+    content="Short-term, skill-based diploma and PG diploma programs abroad with expert guidance from Optimus Overseas Educational Consultants."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/courses/diploma"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Diploma & PG Diploma Programs Abroad"
+  />
+  <meta
+    name="twitter:description"
+    content="Explore short-term diploma and PG diploma programs abroad with career-focused pathways."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
 
     <div className="bg-[#f6f9fc]">
 

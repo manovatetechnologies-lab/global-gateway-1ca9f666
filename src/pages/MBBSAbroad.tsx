@@ -229,21 +229,62 @@ const MBBSAbroad = () => {
 
   return (
     <Layout>
-      <Helmet>
-    <title>
-      MBBS Abroad Consultants in India | Optimus Overseas Educational Consultants
-    </title>
+<Helmet>
+  {/* Primary SEO */}
+  <title>
+    MBBS Abroad Consultants in India | Study MBBS Overseas – Optimus Overseas
+  </title>
 
-    <meta
-      name="description"
-      content="Study MBBS abroad with Optimus Overseas Educational Consultants. Get admission in NMC-recognized medical universities in Russia, Georgia, Philippines, Kazakhstan and Europe."
-    />
+  <meta
+    name="description"
+    content="Optimus Overseas Educational Consultants is a trusted MBBS abroad consultancy in India offering admissions in NMC-recognized medical universities across Russia, Georgia, Philippines, Kazakhstan, Europe and more."
+  />
 
-    <link
-      rel="canonical"
-      href="https://www.optimusoverseasedu.com/mbbs-abroad"
-    />
-  </Helmet>
+  <meta
+    name="keywords"
+    content="mbbs abroad consultants india, study mbbs abroad, mbbs overseas admission, nmc approved medical universities, mbbs in russia, mbbs in georgia, mbbs in philippines"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/mbbs-abroad"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="MBBS Abroad Consultants in India | Study MBBS Overseas"
+  />
+  <meta
+    property="og:description"
+    content="Study MBBS abroad with Optimus Overseas. Get admission in NMC-approved medical universities with affordable fees, no donation, and full visa support."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/mbbs-abroad"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="MBBS Abroad Consultants in India | Optimus Overseas"
+  />
+  <meta
+    name="twitter:description"
+    content="Affordable MBBS abroad admissions in NMC-recognized universities across Russia, Georgia, Philippines, Kazakhstan and Europe."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
       <div className="page-transition">
         {/* Hero Section */}
         <section className="bg-primary py-24">

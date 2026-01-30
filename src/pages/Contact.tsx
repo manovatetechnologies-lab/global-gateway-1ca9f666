@@ -93,20 +93,61 @@ const Contact = () => {
     <>
     <Layout>
       <Helmet>
-    <title>
-      Contact Optimus Overseas Educational Consultants | Free Study Abroad Consultation
-    </title>
+  {/* Primary SEO */}
+  <title>
+    Contact Optimus Overseas Education | Free Study Abroad Consultation
+  </title>
 
-    <meta
-      name="description"
-      content="Contact Optimus Overseas Educational Consultants for free study abroad counselling, MBBS abroad guidance, admissions and visa assistance. Call or visit our Chennai office."
-    />
+  <meta
+    name="description"
+    content="Contact Optimus Overseas Educational Consultants for free study abroad counselling, MBBS abroad guidance, admissions, visa, loans, and overseas education support. Visit our Chennai office or call us today."
+  />
 
-    <link
-      rel="canonical"
-      href="https://www.optimusoverseasedu.com/contact"
-    />
-  </Helmet>
+  <meta
+    name="keywords"
+    content="contact study abroad consultants, study abroad consultants chennai, overseas education counselling, free study abroad consultation"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/contact"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Contact Optimus Overseas Education | Free Study Abroad Consultation"
+  />
+  <meta
+    property="og:description"
+    content="Get in touch with Optimus Overseas Educational Consultants for expert study abroad guidance, admissions, visa support, and free counselling."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/contact"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Contact Optimus Overseas Education"
+  />
+  <meta
+    name="twitter:description"
+    content="Book a free study abroad consultation with expert counsellors at Optimus Overseas Education."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
       <div className="page-transition">
         {/* Hero Section */}
         <section className="bg-primary py-24">

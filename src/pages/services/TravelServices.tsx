@@ -7,6 +7,7 @@ import {
   Luggage,
   CheckCircle,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const travelServices = [
   {
@@ -41,8 +42,64 @@ const whyChooseUs = [
 const TravelServices = () => {
   return (
     <Layout>
+      {/* SEO */}
+      <Helmet>
+        <title>
+          Student Travel Services for Study Abroad | Optimus Overseas Education
+        </title>
+
+        <meta
+          name="description"
+          content="Optimus Overseas Education offers complete student travel services including flight booking, travel planning, and pre-departure guidance for studying abroad."
+        />
+
+        <meta
+          name="keywords"
+          content="student travel services, study abroad travel assistance, flight booking for students, international student travel, overseas education travel support"
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.optimusoverseasedu.com/services/travel"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Student Travel Services for Study Abroad | Optimus Overseas Education"
+        />
+        <meta
+          property="og:description"
+          content="Smooth and stress-free international travel support for students studying abroad, from flight booking to arrival assistance."
+        />
+        <meta
+          property="og:url"
+          content="https://www.optimusoverseasedu.com/services/travel"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Student Travel Services for Study Abroad | Optimus Overseas Education"
+        />
+        <meta
+          name="twitter:description"
+          content="End-to-end travel assistance for international students including flights, planning, and pre-departure guidance."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+      </Helmet>
+
       {/* HERO */}
-        <section className="bg-primary pt-32 pb-24">
+      <section className="bg-primary pt-32 pb-24">
         <div className="container-custom">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-full text-sm mb-6">
@@ -56,7 +113,6 @@ const TravelServices = () => {
             <p className="text-xl text-primary-foreground/80 leading-relaxed">
               From flight booking to pre-departure guidance, we ensure a smooth
               and stress-free international travel experience for students.
-              
             </p>
           </div>
         </div>
@@ -104,7 +160,6 @@ const TravelServices = () => {
       <section className="section-padding">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* LEFT */}
             <div>
               <h2 className="font-display text-4xl font-bold text-foreground mb-6">
                 Why Choose Our Travel Services?
@@ -124,7 +179,6 @@ const TravelServices = () => {
               </ul>
             </div>
 
-            {/* RIGHT */}
             <div className="bg-secondary rounded-2xl p-10">
               <div className="space-y-6">
                 <p className="text-foreground">
@@ -143,7 +197,7 @@ const TravelServices = () => {
         </div>
       </section>
 
-      {/* CTA BOX */}
+      {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl px-10 py-14 text-center relative -mb-24">

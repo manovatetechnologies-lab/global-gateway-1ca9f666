@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
+import { Helmet } from "react-helmet-async";
 import {
   CheckCircle,
   ChevronDown,
@@ -134,6 +135,62 @@ const EducationLoan = () => {
 
   return (
     <Layout>
+      <Helmet>
+  {/* Primary SEO */}
+  <title>
+    Education Loan Assistance for Study Abroad | Student Loan Experts – Optimus
+  </title>
+
+  <meta
+    name="description"
+    content="Get expert education loan assistance for studying abroad. Optimus Overseas Education helps students secure loans from top banks and NBFCs with complete documentation support."
+  />
+
+  <meta
+    name="keywords"
+    content="education loan for study abroad, student education loan, overseas education loan assistance, education loan consultants, student loan guidance"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/services/education-loan"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Education Loan Assistance for Study Abroad | Optimus Overseas Education"
+  />
+  <meta
+    property="og:description"
+    content="Secure education loans for overseas studies with expert guidance, bank comparison, and end-to-end documentation support."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/services/education-loan"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Education Loan Assistance for Study Abroad"
+  />
+  <meta
+    name="twitter:description"
+    content="Student-friendly education loan support for studying abroad, including bank tie-ups and documentation assistance."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
       {/* HERO */}
       <section className="bg-primary pt-36 pb-28">
         <div className="container-custom max-w-5xl">

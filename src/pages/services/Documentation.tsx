@@ -6,6 +6,7 @@ import {
   ClipboardList,
   PenTool,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const documents = [
   {
@@ -40,8 +41,65 @@ const whyUs = [
 const Documentation = () => {
   return (
     <Layout>
+      {/* SEO */}
+      <Helmet>
+        {/* Primary SEO */}
+        <title>
+          Study Abroad Documentation Support | SOP & LOR Experts – Optimus
+        </title>
+
+        <meta
+          name="description"
+          content="Get professional documentation support for study abroad including SOP, LOR, resumes, transcripts, and application forms with Optimus Overseas Education."
+        />
+
+        <meta
+          name="keywords"
+          content="study abroad documentation, SOP writing services, LOR assistance, application documentation support, overseas education consultants"
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.optimusoverseasedu.com/services/documentation"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Study Abroad Documentation Support | Optimus Overseas Education"
+        />
+        <meta
+          property="og:description"
+          content="Expert SOP, LOR, and application documentation support to improve university admissions and visa success."
+        />
+        <meta
+          property="og:url"
+          content="https://www.optimusoverseasedu.com/services/documentation"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Study Abroad Documentation Support | SOP & LOR Experts"
+        />
+        <meta
+          name="twitter:description"
+          content="Professional documentation support for SOPs, LORs, resumes, and study abroad applications."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+      </Helmet>
+
       {/* HERO */}
-       <section className="bg-primary pt-32 pb-24">
+      <section className="bg-primary pt-32 pb-24">
         <div className="container-custom">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-full text-sm mb-6">
@@ -49,14 +107,13 @@ const Documentation = () => {
             </span>
 
             <h1 className="font-display text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-               Documentation Support
+              Documentation Support
             </h1>
 
             <p className="text-xl text-primary-foreground/80 leading-relaxed">
-             Accurate and well-prepared documentation plays a crucial role in
+              Accurate and well-prepared documentation plays a crucial role in
               securing university admissions and visa approvals. Our experts
               ensure every document meets international standards.
-              
             </p>
           </div>
         </div>
@@ -104,7 +161,6 @@ const Documentation = () => {
       <section className="section-padding">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* LEFT */}
             <div>
               <h2 className="font-display text-4xl font-bold text-foreground mb-6">
                 Why Choose Our Documentation Services?
@@ -124,7 +180,6 @@ const Documentation = () => {
               </ul>
             </div>
 
-            {/* RIGHT */}
             <div className="bg-secondary rounded-2xl p-10">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -146,7 +201,7 @@ const Documentation = () => {
         </div>
       </section>
 
-      {/* CTA BOX */}
+      {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl px-10 py-14 text-center relative -mb-24">

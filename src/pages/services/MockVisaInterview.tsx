@@ -7,6 +7,7 @@ import {
   Mic,
   ShieldCheck,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const interviewStages = [
   {
@@ -38,8 +39,65 @@ const commonQuestions = [
 const MockVisaInterview = () => {
   return (
     <Layout>
+      {/* SEO */}
+      <Helmet>
+        {/* Primary SEO */}
+        <title>
+          Mock Visa Interview Preparation | Student Visa Coaching – Optimus
+        </title>
+
+        <meta
+          name="description"
+          content="Prepare for your student visa interview with expert-led mock visa interview sessions. Improve confidence, clarity, and approval success rates."
+        />
+
+        <meta
+          name="keywords"
+          content="mock visa interview, student visa interview preparation, visa interview coaching, study abroad visa training"
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.optimusoverseasedu.com/services/mock-visa"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Mock Visa Interview Preparation | Optimus Overseas Education"
+        />
+        <meta
+          property="og:description"
+          content="Realistic mock visa interview sessions to help students succeed in their student visa interviews with confidence."
+        />
+        <meta
+          property="og:url"
+          content="https://www.optimusoverseasedu.com/services/mock-visa"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Mock Visa Interview Preparation"
+        />
+        <meta
+          name="twitter:description"
+          content="Build confidence and improve student visa approval chances with expert mock visa interview training."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+      </Helmet>
+
       {/* HERO */}
-   <section className="bg-primary pt-32 pb-24">
+      <section className="bg-primary pt-32 pb-24">
         <div className="container-custom">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-full text-sm mb-6">
@@ -54,7 +112,6 @@ const MockVisaInterview = () => {
               Prepare confidently for your student visa interview with realistic
               mock sessions designed to improve clarity, confidence, and success
               rates.
-              
             </p>
           </div>
         </div>
@@ -102,7 +159,6 @@ const MockVisaInterview = () => {
       <section className="section-padding">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* LEFT */}
             <div>
               <h2 className="font-display text-4xl font-bold text-foreground mb-6">
                 Common Visa Interview Questions
@@ -121,7 +177,6 @@ const MockVisaInterview = () => {
               </ul>
             </div>
 
-            {/* RIGHT */}
             <div className="bg-secondary rounded-2xl p-10">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -150,7 +205,7 @@ const MockVisaInterview = () => {
         </div>
       </section>
 
-      {/* CTA BOX */}
+      {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl px-10 py-14 text-center relative -mb-24">

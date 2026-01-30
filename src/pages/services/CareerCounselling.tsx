@@ -1,16 +1,66 @@
 import { CheckCircle, Users, Compass, BarChart3 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Layout from "@/components/layout/Layout";
+
 const CareerCounselling = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Career Counselling | Study Abroad Services</title>
-        <meta
-          name="description"
-          content="Expert career counselling to help students choose the right course, country, and career path based on profile and goals."
-        />
-      </Helmet>
+  {/* Primary SEO */}
+  <title>
+    Career Counselling for Study Abroad | Expert Career Guidance – Optimus
+  </title>
+
+  <meta
+    name="description"
+    content="Get expert career counselling for study abroad. Optimus Overseas Education provides personalized career guidance to help students choose the right course, country, and career path."
+  />
+
+  <meta
+    name="keywords"
+    content="career counselling, study abroad career counselling, career guidance services, overseas education counselling, student career guidance"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/services/career-counselling"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Career Counselling for Study Abroad | Optimus Overseas Education"
+  />
+  <meta
+    property="og:description"
+    content="Personalized one-on-one career counselling to help students make confident academic and career decisions."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/services/career-counselling"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Career Counselling for Study Abroad"
+  />
+  <meta
+    name="twitter:description"
+    content="Expert career guidance to help students choose the right course, country, and long-term career path."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
 
       {/* HERO SECTION */}
       <section className="bg-primary pt-32 pb-24">

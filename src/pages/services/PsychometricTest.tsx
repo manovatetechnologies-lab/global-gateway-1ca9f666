@@ -6,12 +6,61 @@ const PsychometricTest = () => {
   return (
     <>
       <Helmet>
-        <title>Psychometric Test | Study Abroad Services</title>
-        <meta
-          name="description"
-          content="Psychometric Test to identify the right career path based on aptitude, personality, and interests."
-        />
-      </Helmet>
+  {/* Primary SEO */}
+  <title>
+    Psychometric Test for Career Guidance | Optimus Overseas Education
+  </title>
+
+  <meta
+    name="description"
+    content="Take a scientific psychometric test to identify the right career path based on aptitude, personality, and interests. Expert-guided career counselling included."
+  />
+
+  <meta
+    name="keywords"
+    content="psychometric test, career guidance test, aptitude test for students, career assessment, study abroad counselling"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/services/psychometric-test"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Psychometric Test for Career Guidance | Optimus Overseas Education"
+  />
+  <meta
+    property="og:description"
+    content="A scientifically designed psychometric test to help students choose the right career and study path with confidence."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/services/psychometric-test"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Psychometric Test for Career Guidance"
+  />
+  <meta
+    name="twitter:description"
+    content="Identify the right career path with a data-driven psychometric test and expert counselling."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
 <Navbar />
       {/* HERO SECTION */}
       <section className="bg-primary pt-32 pb-24">

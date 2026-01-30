@@ -13,12 +13,61 @@ const CountrySelection = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Country Selection | Study Abroad Services</title>
-        <meta
-          name="description"
-          content="Expert country selection guidance to help students choose the best study destination based on budget, academics, visa success, and career outcomes."
-        />
-      </Helmet>
+  {/* Primary SEO */}
+  <title>
+    Country Selection for Study Abroad | Expert Guidance – Optimus
+  </title>
+
+  <meta
+    name="description"
+    content="Get expert country selection guidance for studying abroad. Optimus Overseas Education helps students choose the best study destination based on academics, budget, visa success, and career outcomes."
+  />
+
+  <meta
+    name="keywords"
+    content="country selection for study abroad, best country to study abroad, study abroad destination guidance, overseas education consultants, study abroad counselling"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/services/country-selection"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Country Selection for Study Abroad | Optimus Overseas Education"
+  />
+  <meta
+    property="og:description"
+    content="Personalized country selection guidance to help students choose the best study destination for long-term academic and career success."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/services/country-selection"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Country Selection for Study Abroad"
+  />
+  <meta
+    name="twitter:description"
+    content="Expert guidance to choose the right country for studying abroad based on profile, budget, visa success, and career goals."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
 
       {/* HERO */}
       <section className="bg-primary pt-32 pb-24">

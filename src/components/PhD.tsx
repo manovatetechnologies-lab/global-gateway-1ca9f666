@@ -13,21 +13,62 @@ import { Helmet } from "react-helmet-async";
 export default function PhD() {
   return (
     <Layout>
-      <Helmet>
-    <title>
-      PhD & Doctorate Programs Abroad | Optimus Overseas Educational Consultants
-    </title>
+<Helmet>
+  {/* Primary SEO */}
+  <title>
+    PhD & Doctorate Programs Abroad | Funded PhD Overseas
+  </title>
 
-    <meta
-      name="description"
-      content="Pursue PhD and doctorate programs abroad with Optimus Overseas Educational Consultants. Get guidance on research proposals, funded PhD options and top global universities."
-    />
+  <meta
+    name="description"
+    content="Pursue PhD and doctorate programs abroad with Optimus Overseas Educational Consultants. Get expert guidance on research proposals, funded PhD options, scholarships and top global universities."
+  />
 
-    <link
-      rel="canonical"
-      href="https://www.optimusoverseasedu.com/courses/phd"
-    />
-  </Helmet>
+  <meta
+    name="keywords"
+    content="phd abroad, doctorate programs abroad, funded phd overseas, research programs abroad, phd scholarships"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/courses/phd"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="PhD & Doctorate Programs Abroad | Funded Research Programs"
+  />
+  <meta
+    property="og:description"
+    content="Study PhD and doctorate programs abroad with expert support for research proposals, supervisors and funded opportunities."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/courses/phd"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="PhD & Doctorate Programs Abroad"
+  />
+  <meta
+    name="twitter:description"
+    content="Explore funded PhD and doctorate programs abroad with expert research guidance."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
     <div className="bg-[#f6f9fc]">
 
       {/* ================= HERO ================= */}

@@ -16,6 +16,7 @@ import {
   Home,
   DollarSign,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {
@@ -101,6 +102,63 @@ const services = [
 const Services = () => {
   return (
     <>
+      {/* SEO */}
+      <Helmet>
+        {/* Primary SEO */}
+        <title>
+          Study Abroad Services | Overseas Education Consultants – Optimus
+        </title>
+
+        <meta
+          name="description"
+          content="Explore complete study abroad services by Optimus Overseas Education including career counselling, admissions, student visa, travel, accommodation, and forex support."
+        />
+
+        <meta
+          name="keywords"
+          content="study abroad services, overseas education consultancy, student visa services, admissions support, education consultants, international education services"
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.optimusoverseasedu.com/services"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Study Abroad Services | Optimus Overseas Education"
+        />
+        <meta
+          property="og:description"
+          content="End-to-end overseas education services including counselling, admissions, visas, travel, accommodation, and forex assistance."
+        />
+        <meta
+          property="og:url"
+          content="https://www.optimusoverseasedu.com/services"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Study Abroad Services | Optimus Overseas Education"
+        />
+        <meta
+          name="twitter:description"
+          content="Complete overseas education support services for students planning to study abroad."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+      </Helmet>
+
       <Navbar />
 
       <section className="pt-32 pb-20 bg-[#f8fafc]">
@@ -116,7 +174,7 @@ const Services = () => {
             </p>
           </div>
 
-          {/* Premium Service Cards */}
+          {/* Service Cards */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
               <Link
@@ -124,7 +182,6 @@ const Services = () => {
                 to={service.link}
                 className="group rounded-2xl p-8 bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1"
               >
-                {/* Icon */}
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 shadow-lg">
                   <service.icon className="w-7 h-7 text-primary-foreground" />
                 </div>

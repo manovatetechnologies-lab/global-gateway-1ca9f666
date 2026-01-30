@@ -12,21 +12,62 @@ import { Helmet } from "react-helmet-async";
 export default function Masters() {
   return (
     <Layout>
-      <Helmet>
-    <title>
-      Master’s Degree Programs Abroad | Optimus Overseas Educational Consultants
-    </title>
+<Helmet>
+  {/* Primary SEO */}
+  <title>
+    Master’s Degree Programs Abroad | MS & MBA Study Overseas
+  </title>
 
-    <meta
-      name="description"
-      content="Pursue master’s degree programs abroad with Optimus Overseas Educational Consultants. Study MS, MBA and postgraduate courses in USA, UK, Canada, Australia and Europe."
-    />
+  <meta
+    name="description"
+    content="Pursue master’s degree programs abroad with Optimus Overseas Educational Consultants. Study MS, MBA and postgraduate courses in USA, UK, Canada, Australia and Europe with expert guidance."
+  />
 
-    <link
-      rel="canonical"
-      href="https://www.optimusoverseasedu.com/courses/masters"
-    />
-  </Helmet>
+  <meta
+    name="keywords"
+    content="masters abroad, ms abroad, mba abroad, postgraduate courses abroad, masters degree overseas"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/courses/masters"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Master’s Degree Programs Abroad | MS & MBA Overseas"
+  />
+  <meta
+    property="og:description"
+    content="Study MS, MBA and postgraduate programs abroad with expert counselling from Optimus Overseas Educational Consultants."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/courses/masters"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Master’s Degree Programs Abroad"
+  />
+  <meta
+    name="twitter:description"
+    content="Explore MS, MBA and postgraduate programs abroad with career-focused pathways."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
     <div className="bg-[#f6f9fc]">
 
       {/* ================= HERO ================= */}

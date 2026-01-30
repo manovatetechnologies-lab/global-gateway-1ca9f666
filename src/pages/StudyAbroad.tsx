@@ -65,21 +65,62 @@ const countries = [
 const StudyAbroad = () => {
   return (
     <Layout>
-      <Helmet>
-    <title>
-      Study Abroad Consultants in India | Optimus Overseas Educational Consultants
-    </title>
+<Helmet>
+  {/* Primary SEO */}
+  <title>
+    Study Abroad Consultants in India | Overseas Education Experts – Optimus Overseas
+  </title>
 
-    <meta
-      name="description"
-      content="Optimus Overseas Educational Consultants provides expert study abroad guidance for USA, UK, Canada, Australia and Europe. Free counselling available."
-    />
+  <meta
+    name="description"
+    content="Optimus Overseas Educational Consultants is a leading study abroad consultancy in India offering expert guidance for USA, UK, Canada, Australia and Europe. Free counselling & admissions support."
+  />
 
-    <link
-      rel="canonical"
-      href="https://www.optimusoverseasedu.com/study-abroad"
-    />
-  </Helmet>
+  <meta
+    name="keywords"
+    content="study abroad consultants india, overseas education consultants, study abroad guidance, study in usa uk canada australia, abroad education consultants"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/study-abroad"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Study Abroad Consultants in India | Optimus Overseas Educational Consultants"
+  />
+  <meta
+    property="og:description"
+    content="Get expert study abroad guidance for USA, UK, Canada, Australia and Europe. Admissions, visa and post-study support by Optimus Overseas."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/study-abroad"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Study Abroad Consultants in India | Optimus Overseas"
+  />
+  <meta
+    name="twitter:description"
+    content="Trusted overseas education consultants in India helping students study in USA, UK, Canada, Australia and Europe."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
       <div className="page-transition">
         {/* Hero Section */}
         <section className="bg-primary py-24">

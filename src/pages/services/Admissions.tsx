@@ -7,6 +7,7 @@ import {
   Send,
   CheckCircle,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const steps = [
   {
@@ -44,6 +45,62 @@ const steps = [
 const Admissions = () => {
   return (
     <Layout>
+      <Helmet>
+  {/* Primary SEO */}
+  <title>
+    Overseas University Admissions Support | Study Abroad Application Assistance
+  </title>
+
+  <meta
+    name="description"
+    content="Get expert overseas admissions support with Optimus Overseas Educational Consultants. Profile evaluation, university shortlisting, documentation and application submission."
+  />
+
+  <meta
+    name="keywords"
+    content="overseas admissions support, study abroad application assistance, university admissions abroad, international admissions consultants"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/admissions"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Overseas Admissions Support | Study Abroad Application Experts"
+  />
+  <meta
+    property="og:description"
+    content="End-to-end overseas admissions support including profile evaluation, university shortlisting, documentation and application submission."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/admissions"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Overseas Admissions Support"
+  />
+  <meta
+    name="twitter:description"
+    content="Professional overseas admissions assistance for study abroad aspirants."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
       {/* HERO */}
         <section className="bg-primary pt-32 pb-24">
         <div className="container-custom">

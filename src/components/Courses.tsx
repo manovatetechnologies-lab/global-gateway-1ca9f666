@@ -7,21 +7,62 @@ export default function Courses() {
   return (
     <>
     <Layout>
-     <Helmet>
-        <title>
-          Courses & Programs Abroad | Optimus Overseas Educational Consultants
-        </title>
+<Helmet>
+  {/* Primary SEO */}
+  <title>
+    Courses & Programs Abroad | Study Overseas Degrees – Optimus Overseas
+  </title>
 
-        <meta
-          name="description"
-          content="Explore bachelor’s, master’s, PhD, diploma and professional courses abroad with Optimus Overseas Educational Consultants. Study in USA, UK, Canada, Australia and Europe."
-        />
+  <meta
+    name="description"
+    content="Explore bachelor’s, master’s, PhD, diploma and professional certification programs abroad with Optimus Overseas Educational Consultants. Study in USA, UK, Canada, Australia and Europe."
+  />
 
-        <link
-          rel="canonical"
-          href="https://www.optimusoverseasedu.com/courses"
-        />
-      </Helmet>
+  <meta
+    name="keywords"
+    content="courses abroad, programs abroad, study abroad courses, overseas education programs, bachelors masters phd abroad"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/courses"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Courses & Programs Abroad | Study Overseas Degrees"
+  />
+  <meta
+    property="og:description"
+    content="Discover bachelor’s, master’s, PhD, diploma and professional courses abroad with expert guidance from Optimus Overseas Educational Consultants."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/courses"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Courses & Programs Abroad | Optimus Overseas"
+  />
+  <meta
+    name="twitter:description"
+    content="Explore bachelor’s, master’s, PhD, diploma and certification programs abroad with expert counselling."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
     <div className="overflow-hidden">
 
       {/* ================= HERO SECTION ================= */}

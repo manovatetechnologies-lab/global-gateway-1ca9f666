@@ -35,18 +35,65 @@ const features = [
 const ForexServices = () => {
   return (
     <Layout>
+      {/* SEO */}
       <Helmet>
+        {/* Primary SEO */}
         <title>
-          Forex Services for Students | Optimus Overseas Educational Consultants
+          Forex Services for Students | Overseas Education Payments – Optimus
         </title>
+
         <meta
           name="description"
-          content="Get secure and affordable forex services for overseas education. Optimus Overseas offers student-friendly foreign exchange and international money transfer support."
+          content="Optimus Overseas Education offers secure, RBI-compliant forex services for students, including foreign exchange and international money transfers for overseas education."
+        />
+
+        <meta
+          name="keywords"
+          content="forex services for students, overseas education forex, international money transfer for study abroad, foreign exchange services, student forex assistance"
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.optimusoverseasedu.com/services/forex"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Forex Services for Students | Optimus Overseas Education"
+        />
+        <meta
+          property="og:description"
+          content="Student-friendly forex services with competitive exchange rates, secure international transfers, and full RBI compliance."
+        />
+        <meta
+          property="og:url"
+          content="https://www.optimusoverseasedu.com/services/forex"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Forex Services for Students | Overseas Education Payments"
+        />
+        <meta
+          name="twitter:description"
+          content="Secure and compliant forex services for overseas education, including international money transfers and currency exchange."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
         />
       </Helmet>
 
       {/* HERO */}
-   <section className="bg-primary pt-32 pb-24">
+      <section className="bg-primary pt-32 pb-24">
         <div className="container-custom">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-full text-sm mb-6">
@@ -54,14 +101,13 @@ const ForexServices = () => {
             </span>
 
             <h1 className="font-display text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-             Forex Services
+              Forex Services
             </h1>
 
             <p className="text-xl text-primary-foreground/80 leading-relaxed">
-             Manage your international education finances with confidence. We
-            provide safe, transparent, and student-friendly forex solutions for
-            tuition payments, living expenses, and overseas transactions.
-              
+              Manage your international education finances with confidence. We
+              provide safe, transparent, and student-friendly forex solutions for
+              tuition payments, living expenses, and overseas transactions.
             </p>
           </div>
         </div>
@@ -129,7 +175,7 @@ const ForexServices = () => {
         </div>
       </section>
 
-      {/* CTA BOX */}
+      {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl px-10 py-14 text-center relative -mb-24">

@@ -38,20 +38,61 @@ const About = () => {
     <>
     <Layout>
       <Helmet>
+  {/* Primary SEO */}
   <title>
     About Optimus Overseas Educational Consultants | Study Abroad Experts
   </title>
 
   <meta
     name="description"
-    content="Learn about Optimus Overseas Educational Consultants, a trusted study abroad consultancy helping students with overseas education, MBBS abroad, and visa guidance since 2009."
+    content="Optimus Overseas Educational Consultants is a trusted study abroad consultancy helping students with overseas education, MBBS abroad, visas, and global university admissions since 2009."
+  />
+
+  <meta
+    name="keywords"
+    content="about optimus overseas, study abroad consultants, overseas education experts, MBBS abroad consultants, international education consultancy"
   />
 
   <link
     rel="canonical"
     href="https://www.optimusoverseasedu.com/about"
   />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="About Optimus Overseas Educational Consultants"
+  />
+  <meta
+    property="og:description"
+    content="Learn about Optimus Overseas Educational Consultants, a trusted overseas education and study abroad consultancy since 2009."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/about"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/about.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="About Optimus Overseas Educational Consultants"
+  />
+  <meta
+    name="twitter:description"
+    content="Trusted overseas education consultants guiding students for study abroad and MBBS programs worldwide."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/about.jpg"
+  />
 </Helmet>
+
       <div className="page-transition">
         {/* Hero Section */}
         <section className="bg-primary py-24">

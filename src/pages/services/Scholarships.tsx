@@ -6,6 +6,7 @@ import {
   GraduationCap,
   CheckCircle,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const scholarshipTypes = [
   {
@@ -44,6 +45,63 @@ const eligibility = [
 const Scholarships = () => {
   return (
     <Layout>
+      {/* SEO */}
+      <Helmet>
+        {/* Primary SEO */}
+        <title>
+          Study Abroad Scholarships & Financial Aid | Optimus Overseas Education
+        </title>
+
+        <meta
+          name="description"
+          content="Get expert assistance for study abroad scholarships and financial aid. Optimus Overseas Education helps students secure merit-based, need-based, and university scholarships."
+        />
+
+        <meta
+          name="keywords"
+          content="study abroad scholarships, international student scholarships, overseas education financial aid, scholarship consultants, education funding assistance"
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.optimusoverseasedu.com/services/scholarships"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Study Abroad Scholarships & Financial Aid | Optimus Overseas Education"
+        />
+        <meta
+          property="og:description"
+          content="Reduce your study abroad costs with expert scholarship and financial aid guidance for international students."
+        />
+        <meta
+          property="og:url"
+          content="https://www.optimusoverseasedu.com/services/scholarships"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Study Abroad Scholarships & Financial Aid"
+        />
+        <meta
+          name="twitter:description"
+          content="Expert help to secure scholarships and financial aid for studying abroad."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+        />
+      </Helmet>
+
       {/* HERO */}
       <section className="bg-primary pt-32 pb-24">
         <div className="container-custom">
@@ -57,12 +115,13 @@ const Scholarships = () => {
             </h1>
 
             <p className="text-xl text-primary-foreground/80 leading-relaxed">
-                We help students secure scholarships and financial aid opportunities
-            that significantly reduce the cost of studying abroad.
+              We help students secure scholarships and financial aid opportunities
+              that significantly reduce the cost of studying abroad.
             </p>
           </div>
         </div>
       </section>
+
       {/* TYPES */}
       <section className="section-padding bg-[#f8fafc]">
         <div className="container-custom">
@@ -102,7 +161,6 @@ const Scholarships = () => {
       <section className="section-padding">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Coverage */}
             <div className="bg-white rounded-2xl p-8 shadow-sm border">
               <h3 className="font-display text-3xl font-bold text-foreground mb-6">
                 What Scholarships Cover
@@ -118,7 +176,6 @@ const Scholarships = () => {
               </ul>
             </div>
 
-            {/* Eligibility */}
             <div className="bg-white rounded-2xl p-8 shadow-sm border">
               <h3 className="font-display text-3xl font-bold text-foreground mb-6">
                 Scholarship Eligibility
@@ -137,7 +194,7 @@ const Scholarships = () => {
         </div>
       </section>
 
-      {/* CTA BOX */}
+      {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl px-10 py-14 text-center relative -mb-24">

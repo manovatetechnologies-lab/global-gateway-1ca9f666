@@ -13,21 +13,62 @@ import { Helmet } from "react-helmet-async";
 export default function Certifications() {
   return (
     <Layout>
-      <Helmet>
-    <title>
-      Professional Certifications Abroad | Optimus Overseas Educational Consultants
-    </title>
+<Helmet>
+  {/* Primary SEO */}
+  <title>
+    Professional Certifications Abroad | Skill-Based Programs – Optimus Overseas
+  </title>
 
-    <meta
-      name="description"
-      content="Explore professional certification programs abroad with Optimus Overseas Educational Consultants. Upskill with globally recognized certifications in tech, business, finance and healthcare."
-    />
- 
-    <link
-      rel="canonical"
-      href="https://www.optimusoverseasedu.com/courses/certifications"
-    />
-  </Helmet>
+  <meta
+    name="description"
+    content="Optimus Overseas Educational Consultants offers globally recognized professional certification programs abroad in technology, business, finance and healthcare for career growth and upskilling."
+  />
+
+  <meta
+    name="keywords"
+    content="professional certifications abroad, certification courses overseas, international certification programs, skill based courses abroad, global certifications"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/courses/certifications"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Professional Certifications Abroad | Global Skill-Based Programs"
+  />
+  <meta
+    property="og:description"
+    content="Upgrade your skills with globally recognized professional certification programs abroad. Expert guidance by Optimus Overseas Educational Consultants."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/courses/certifications"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Professional Certifications Abroad | Optimus Overseas"
+  />
+  <meta
+    name="twitter:description"
+    content="Explore international professional certification programs in tech, business, finance and healthcare with expert guidance."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
     <div className="bg-[#f6f9fc]">
 
       {/* ================= HERO ================= */}

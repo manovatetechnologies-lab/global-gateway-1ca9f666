@@ -4,9 +4,10 @@ import {
   Home,
   ShieldCheck,
   Users,
-  MapPin,
+  MapPin, 
   CheckCircle,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const accommodationTypes = [
   {
@@ -41,6 +42,62 @@ const whyAccommodation = [
 const Accommodation = () => {
   return (
     <Layout>
+      <Helmet>
+  {/* Primary SEO */}
+  <title>
+    Student Accommodation Abroad | Safe Housing Support for International Students
+  </title>
+
+  <meta
+    name="description"
+    content="Get safe, verified and affordable student accommodation abroad with Optimus Overseas Educational Consultants. University hostels, private housing, shared apartments and homestays."
+  />
+
+  <meta
+    name="keywords"
+    content="student accommodation abroad, housing for international students, university hostel abroad, student housing overseas"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/accommodation"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Student Accommodation Abroad | Safe & Verified Housing Support"
+  />
+  <meta
+    property="og:description"
+    content="Secure safe and affordable student accommodation abroad before departure. Verified hostels, apartments and homestays."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/accommodation"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Student Accommodation Abroad"
+  />
+  <meta
+    name="twitter:description"
+    content="Verified and affordable student accommodation support for international students."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
       {/* HERO */}
       <section className="bg-primary pt-32 pb-24">
         <div className="container-custom">

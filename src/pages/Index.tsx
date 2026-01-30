@@ -11,20 +11,61 @@ const Index = () => {
     <Layout>
       
 <Helmet>
-        <title>
-          Optimus Overseas Educational Consultants | Study Abroad & MBBS
-        </title>
+  {/* Primary SEO */}
+  <title>
+    Optimus Overseas Education | Study Abroad & MBBS Consultants in India
+  </title>
 
-        <meta
-          name="description"
-          content="Optimus Overseas Educational Consultants offers expert guidance for study abroad and MBBS abroad programs across USA, UK, Canada, Australia and Europe."
-        />
+  <meta
+    name="description"
+    content="Optimus Overseas Educational Consultants is a trusted study abroad and MBBS abroad consultancy in India, helping students with admissions, visas, scholarships, loans, and overseas education guidance."
+  />
 
-        <link
-          rel="canonical"
-          href="https://www.optimusoverseasedu.com/"
-        />
-      </Helmet>
+  <meta
+    name="keywords"
+    content="study abroad consultants, mbbs abroad consultants, overseas education consultants india, study abroad guidance, international education consultancy"
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.optimusoverseasedu.com/"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Optimus Overseas Education | Study Abroad & MBBS Consultants"
+  />
+  <meta
+    property="og:description"
+    content="Trusted study abroad and MBBS abroad consultancy offering admissions, visa support, scholarships, loans, and career guidance for international education."
+  />
+  <meta
+    property="og:url"
+    content="https://www.optimusoverseasedu.com/"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Optimus Overseas Education | Study Abroad & MBBS Consultants"
+  />
+  <meta
+    name="twitter:description"
+    content="Expert study abroad and MBBS abroad consultancy helping students achieve global education dreams."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.optimusoverseasedu.com/og/optimus-footer.jpeg"
+  />
+</Helmet>
+
       {/* SEO H1 – must exist */}
       <h1 className="sr-only">
         Study Abroad & MBBS Abroad Consultants in India
