@@ -17,7 +17,21 @@ import Masters from "./components/Masters";
 import PhD from "./components/PhD";
 import Diploma from "./components/Diploma";
 import Certifications from "./components/Certifications";
-
+import Services from "@/pages/services/Services";
+import ServiceDetail from "@/pages/services/ServiceDetail";
+import PsychometricTest from "@/pages/services/PsychometricTest";
+import CareerCounselling from "@/pages/services/CareerCounselling";
+import CountrySelection from "@/pages/services/CountrySelection";
+import CourseUniversitySelection from "@/pages/services/CourseUniversitySelection";
+import Admissions from "@/pages/services/Admissions";
+import Scholarships from "@/pages/services/Scholarships";
+import EducationLoan from "@/pages/services/EducationLoan";
+import Documentation from "@/pages/services/Documentation";
+import StudentVisa from "@/pages/services/StudentVisa";
+import MockVisaInterview from "@/pages/services/MockVisaInterview";
+import TravelServices from "@/pages/services/TravelServices";
+import Accommodation from "@/pages/services/Accommodation";
+import ForexServices from "./pages/services/ForexServices";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -40,6 +54,26 @@ const App = () => (
           <Route path="/courses/phd" element={<PhD />} />
           <Route path="/courses/diploma" element={<Diploma />} />
           <Route path="/courses/certifications" element={<Certifications />} />
+          <Route path="/services" element={<Services />} />
+<Route path="/services/:slug" element={<ServiceDetail />} />
+<Route path="/services/psychometric-test" element={<PsychometricTest />} />
+<Route path="/services/career-counselling" element={<CareerCounselling />} />
+<Route path="/services/country-selection" element={<CountrySelection />} />
+<Route
+  path="/services/course-university"
+  element={<CourseUniversitySelection />}
+/>
+<Route path="/services/admissions" element={<Admissions />} />
+
+<Route path="/services/scholarships" element={<Scholarships />} />
+<Route path="/services/education-loan" element={<EducationLoan />} />
+
+<Route path="/services/documentation" element={<Documentation />} />
+<Route path="/services/student-visa" element={<StudentVisa />} />
+<Route path="/services/mock-visa" element={<MockVisaInterview />} />
+<Route path="/services/travel" element={<TravelServices />} />
+<Route path="/services/accommodation" element={<Accommodation />} />
+<Route path="/services/forex" element={<ForexServices />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

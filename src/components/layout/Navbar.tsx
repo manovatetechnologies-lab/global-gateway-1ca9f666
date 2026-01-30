@@ -17,6 +17,18 @@ interface NavItem {
   href: string;
   dropdown?: DropdownItem[];
 }
+interface DropdownItem {
+  label: string;
+  href: string;
+}
+
+interface NavItem {
+  label: string;
+  href: string;
+  dropdown?: DropdownItem[];
+  type?: "mega"; // 👈 ADD THIS
+}
+
 const dropdownStyle: React.CSSProperties = {
   maxHeight: "280px",              // 👈 smaller = premium
   overflowY: "auto",
@@ -60,6 +72,28 @@ const navItems: NavItem[] = [
     { label: "MBBS in Bulgaria", href: "/mbbs-abroad#bulgaria" }
   ],
 },
+{
+  label: "Services",
+  href: "/services",
+  type: "mega",
+  dropdown: [
+    { label: "Psychometric Test", href: "/services/psychometric-test" },
+    { label: "Career Counselling", href: "/services/career-counselling" },
+    { label: "Country Selection", href: "/services/country-selection" },
+    { label: "Course / University", href: "/services/course-university" },
+    { label: "Admissions", href: "/services/admissions" },
+    { label: "Scholarships", href: "/services/scholarships" },
+    { label: "Educational Loan", href: "/services/education-loan" },
+
+    { label: "Documentation", href: "/services/documentation" },
+    { label: "Student Visa", href: "/services/student-visa" },
+    { label: "Mock Visa Interview", href: "/services/mock-visa" },
+    { label: "Travel Services", href: "/services/travel" },
+    { label: "Accommodation", href: "/services/accommodation" },
+    { label: "Forex Services", href: "/services/forex" },
+  ],
+},
+
 
   {
   label: "Courses",
