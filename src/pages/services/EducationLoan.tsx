@@ -12,23 +12,23 @@ import {
 /* ----------------------------------
    BANK LOGOS (AVAILABLE FILES ONLY)
 ---------------------------------- */
-// const bankLogos = [
-//   "/images/banks/SBI.png",
-//   "/images/banks/pnb.jpg",
-//   "/images/banks/bank.png",              
-//   "/images/banks/canara.jpg",
-//   "/images/banks/unionbank.png",
-//   "/images/banks/centralbank.jpg",
-//   "/images/banks/indian-bank-logo-hd.png",
-//   "/images/banks/indianoverseas.jpg",
-//   "/images/banks/indusland.jpg",
-//   "/images/banks/hdfc.png",
-//   "/images/banks/icici.png",
-//   "/images/banks/axis-bank-logo.png",
-//   "/images/banks/IDBI-bank-logo.jpg",
-//   "/images/banks/kotak.png",
-//   "/images/banks/yesbank.png",
-// ];
+const bankLogos = [
+  "/images/banks/SBI.png",
+  "/images/banks/pnb.jpg",
+  "/images/banks/bank.png",              // Bank of Baroda
+  "/images/banks/canara.jpg",
+  "/images/banks/unionbank.png",
+  "/images/banks/centralbank.jpg",
+  "/images/banks/indian-bank-logo-hd.png",
+  "/images/banks/indianoverseas.jpg",
+  "/images/banks/indusland.jpg",
+  "/images/banks/hdfc.png",
+  "/images/banks/icici.png",
+  "/images/banks/axis-bank-logo.png",
+  "/images/banks/IDBI-bank-logo.jpg",
+  "/images/banks/kotak.png",
+  "/images/banks/yesbank.png",
+];
 
 /* ----------------------------------
    LOAN PROCESS
@@ -210,7 +210,7 @@ const EducationLoan = () => {
       </section>
 
       {/* BANK MARQUEE */}
-      {/* <section className="py-16 bg-white border-y overflow-hidden">
+      <section className="py-16 bg-white border-y overflow-hidden">
         <div className="container-custom">
           <p className="text-center uppercase tracking-widest text-sm text-muted-foreground mb-10">
             Education Loan Banking Partners
@@ -227,7 +227,7 @@ const EducationLoan = () => {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* PROCESS */}
       <section className="section-padding bg-[#f8fafc]">
