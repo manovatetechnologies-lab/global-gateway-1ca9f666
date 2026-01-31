@@ -114,6 +114,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [expandedMobileItems, setExpandedMobileItems] = useState<string | null>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -220,38 +221,46 @@ const Navbar = () => {
           <nav className="lg:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-in">
             {navItems.map((item) => (
               <div key={item.label} className="py-2">
-                <Link
-                  to={item.href}
-                  className="block py-2 font-medium text-foreground hover:text-primary transition-colors"
-                >
-                  {item.label}
-                </Link>
-                {item.dropdown && (
-                  <div className="pl-4 mt-1 space-y-1">
-                    {item.dropdown.map((dropItem) => (
-                     <Link
-  key={dropItem.label}
-  to={dropItem.href}
-  className="dropdown-item"
-  style={{
-    padding: "8px 18px",
-    fontSize: "14px",
-    lineHeight: "1.4",
-    background:
-      location.hash === dropItem.href.split("#")[1]
-        ? "#f4f7fb"
-        : "transparent",
-    fontWeight:
-      location.hash === dropItem.href.split("#")[1]
-        ? 600
-        : 400,
-  }}
->
-  {dropItem.label}
-</Link>
-
-                    ))}
-                  </div>
+                {item.dropdown ? (
+                  <>
+                    <button
+                      onClick={() =>
+                        setExpandedMobileItems(
+                          expandedMobileItems === item.label ? null : item.label
+                        )
+                      }
+                      className="w-full flex items-center justify-between py-2 font-medium text-foreground hover:text-primary transition-colors"
+                    >
+                      <span>{item.label}</span>
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-300 ${
+                          expandedMobileItems === item.label ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {expandedMobileItems === item.label && (
+                      <div className="pl-4 mt-2 space-y-2">
+                        {item.dropdown.map((dropItem) => (
+                          <Link
+                            key={dropItem.label}
+                            to={dropItem.href}
+                            className="block py-2 text-sm text-foreground/80 hover:text-primary transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            {dropItem.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    to={item.href}
+                    className="block py-2 font-medium text-foreground hover:text-primary transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
                 )}
               </div>
             ))}
