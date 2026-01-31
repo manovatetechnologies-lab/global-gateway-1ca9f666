@@ -239,7 +239,7 @@ const Navbar = () => {
                       />
                     </button>
                     {expandedMobileItems === item.label && (
-                      <div className="pl-4 mt-2 space-y-2">
+                      <div className="pl-4 mt-2 space-y-2 max-h-64 overflow-y-auto pr-2">
                         {item.dropdown.map((dropItem) => (
                           <Link
                             key={dropItem.label}
