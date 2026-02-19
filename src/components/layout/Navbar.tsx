@@ -108,6 +108,7 @@ const navItems: NavItem[] = [
 },
 
   { label: "Contact Us", href: "/contact" },
+  { label: "Universities Partner", href: "/universities" },
 ];
 
 const Navbar = () => {

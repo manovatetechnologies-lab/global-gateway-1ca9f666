@@ -32,6 +32,7 @@ import MockVisaInterview from "@/pages/services/MockVisaInterview";
 import TravelServices from "@/pages/services/TravelServices";
 import Accommodation from "@/pages/services/Accommodation";
 import ForexServices from "./pages/services/ForexServices";
+import Universities from "./pages/Universities";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -59,6 +60,7 @@ const App = () => (
 <Route path="/services/psychometric-test" element={<PsychometricTest />} />
 <Route path="/services/career-counselling" element={<CareerCounselling />} />
 <Route path="/services/country-selection" element={<CountrySelection />} />
+<Route path="/universities" element={<Universities />} />
 <Route
   path="/services/course-university"
   element={<CourseUniversitySelection />}
